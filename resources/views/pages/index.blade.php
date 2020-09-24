@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-    <title>{{env('APP_NAME')}}</title>
-    </head>
-    <body >
-      <h1>Welcome to laravel</h1>
-      <p>this is laravel from scratch</p>
-    </body>
-</html>
+@section('content')   
+<h1>{{$title}}</h1>
+  <p>this is laravel from scratch</p>
+@endsection
